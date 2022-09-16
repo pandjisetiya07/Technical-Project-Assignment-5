@@ -1,0 +1,40 @@
+.container-judul {
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  /* text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000,
+    0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; */
+  font-size: xx-large !important;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 1080px) {
+  .label {
+    padding: 2rem 25rem 2rem 25rem !important;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .label {
+    padding: 2rem 5rem 2rem 5rem !important;
+  }
+}
+.add {
+  border-radius: 15px !important;
+  border: 2px solid #2c306f !important;
+}
+.list {
+  border: 2px solid #2c306f !important;
+  border-radius: 10px;
+}
+@media screen and (min-width: 432px) {
+  .list {
+    border: 2px solid #2c306f !important;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 10px;
+    padding: 0.2rem;
+  }
+}
+.card {
+  border: 2px solid #2c306f !important;
+  background-size: 100%;
+}

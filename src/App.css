@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Marck+Script&family=Sarabun:wght@100&family=Signika+Negative&display=swap");
+@import url("https://www.fontspace.com/a-alloy-ink-font-f45503");
+
+.App {
+  text-align: center;
+}
+body {
+  /* background-image: url("./assets/bg-list.jpg"); */
+  background-size: 100%;
+  font-family: "Sarabun", sans-serif;
+}
