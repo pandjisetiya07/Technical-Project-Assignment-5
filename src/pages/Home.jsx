@@ -96,7 +96,7 @@ function Home() {
           <div className="col label">
             <div className="form-group">
               <div className="input-group">
-                <input id="field1" type="text" className="form-control add" placeholder="Write down your activities" name="todo" onChange={handleinput} />
+                <input id="field1" type="text" className="form-control add" placeholder="Input List" name="todo" onChange={handleinput} />
                 <span className="input-group-btn">
                   <button className="btn btn-info add ms-2" type="button" onClick={handleadd}>
                     Add
@@ -112,7 +112,7 @@ function Home() {
               <div className="col label">
                 <div className="form-group">
                   <div className="input-group">
-                    <input id="field1" type="text" className="form-control add" placeholder="Write down your activities" name="todo" onChange={edittext} />
+                    <input id="field1" type="text" className="form-control add" placeholder="Edit List" name="todo" onChange={edittext} />
                     <span className="input-group-btn">
                       <button className="btn btn-info add ms-2" name="todo" type="button" onClick={() => handleedit(idedit)}>
                         Edit
@@ -127,13 +127,13 @@ function Home() {
         <div className="container">
           <div className="row label d-flex justify-content-between">
             <div>
-              <button className={`btn add ms-2 ${selected === "All" ? "btn-info add" : "btn add"}`} name="All" type="button" onClick={handlepick}>
+              <button className={`btn add ms-2 ${selected === "All" ? "btn-danger add" : "btn add"}`} name="All" type="button" onClick={handlepick}>
                 All
               </button>
-              <button className={`btn add ms-2 ${selected === "Active" ? "btn-info add" : "btn add"}`} name="Active" type="button" onClick={handlepick}>
+              <button className={`btn add ms-2 ${selected === "Active" ? "btn-warning add" : "btn add"}`} name="Active" type="button" onClick={handlepick}>
                 Active
               </button>
-              <button className={`btn add ms-2 ${selected === "Completed" ? "btn-info add" : "btn add"}`} name="Completed" type="button" onClick={handlepick}>
+              <button className={`btn add ms-2 ${selected === "Completed" ? "btn-success add" : "btn add"}`} name="Completed" type="button" onClick={handlepick}>
                 Completed
               </button>
             </div>
@@ -184,12 +184,12 @@ function Home() {
                           </div>
                           <button className="btn  me-2 mt-1" onClick={() => tampil(element.id)}>
                             <span>
-                              <img src={require("../assets/e.png")} style={{ width: 25 }} />
+                            <BsPencilSquare/>
                             </span>
                           </button>
                           <button className="btn mt-1" onClick={() => deleted(element.id)}>
                             <span>
-                              <img src={require("../assets/delete.png")} style={{ width: 25 }} />
+                            <BsTrashFill/>
                             </span>
                           </button>
                         </div>
@@ -211,13 +211,13 @@ function Home() {
                             <button className="card-text list">{element.status}</button>
                           </div>
                           <button className="btn  me-2 mt-1">
-                            <span>
-                              <img src={require("../assets/e.png")} style={{ width: 25 }} />
+                          <span>
+                            <BsPencilSquare/>
                             </span>
                           </button>
                           <button className="btn mt-1" onClick={() => deleted(element.id)}>
-                            <span>
-                              <img src={require("../assets/delete.png")} style={{ width: 25 }} />
+                          <span>
+                            <BsTrashFill/>
                             </span>
                           </button>
                         </div>
